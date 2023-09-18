@@ -141,7 +141,7 @@
       bindings = <
 &trans  &trans  &trans  &trans  &trans  &prev_app_macro    &next_app_macro  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
-&to 6   &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
+&tog 6  &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans             &trans           &trans  &trans
       >;
     };
@@ -149,9 +149,9 @@
     mac_shortcuts {
       label = "MAC SHORTCUTS";
       bindings = <
-&tog 5  &trans  &trans  &trans  &trans  &prev_app_mac_macro    &next_app_mac_macro  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &prev_app_mac_macro    &next_app_mac_macro  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
+&tog 6  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                 &trans               &trans  &trans
       >;
     };
@@ -162,6 +162,11 @@
 
     quick_shortcuts {
       if-layers = <1 2>;
+      then-layer = <5>;
+    };
+
+    return_win {
+      if-layers = <6 1>;
       then-layer = <5>;
     };
   };
