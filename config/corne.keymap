@@ -21,17 +21,6 @@
 
   combos {
     compatible = "zmk,combos";
-
-    next_app {
-      bindings = <&next_app_macro>;
-      key-positions = <40 41>;
-      layers = <0>;
-    };
-
-    prev_app {
-      bindings = <&prev_app_macro>;
-      key-positions = <39 41>;
-    };
   };
 
   macros {
@@ -66,23 +55,25 @@
       compatible = "zmk,behavior-macro";
       label = "NEXT_APP_MACRO";
       #binding-cells = <0>;
-      bindings =
-        <&macro_press>,
-        <&kp LCTRL &kp RIGHT_ALT>,
-        <&macro_tap>,
-        <&kp TAB>,
-        <&macro_release>;
+      bindings = <&kp LC(LA(TAB))>;
     };
     prev_app_macro: prev_app_macro {
       compatible = "zmk,behavior-macro";
       label = "PREV_APP_MACRO";
       #binding-cells = <0>;
-      bindings =
-        <&macro_press>,
-        <&kp LCTRL &kp RALT &kp LSHFT>,
-        <&macro_tap>,
-        <&kp TAB>,
-        <&macro_release>;
+      bindings = <&kp LC(LS(LA(TAB)))>;
+    };
+    next_app_mac_macro: next_app_mac_macro {
+      compatible = "zmk,behavior-macro";
+      label = "NEXT_APP_MAC_MACRO";
+      #binding-cells = <0>;
+      bindings = <&kp LG(TAB)>;
+    };
+    prev_app_mac_macro: prev_app_mac_macro {
+      compatible = "zmk,behavior-macro";
+      label = "PREV_APP_MAC_MACRO";
+      #binding-cells = <0>;
+      bindings = <&kp LS(LG(TAB))>;
     };
   };
 
@@ -142,6 +133,37 @@
       >;
 
       label = "CONFIG";
+    };
+
+    win_shortcuts {
+      bindings = <
+&trans  &trans  &trans  &trans  &trans  &prev_app_macro    &next_app_macro  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
+&to 6   &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans             &trans           &trans  &trans
+      >;
+
+      label = "WIN SHORTCUTS";
+    };
+
+    mac_shortcuts {
+      bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+      >;
+
+      label = "MAC SHORTCUTS";
+    };
+  };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    quick_shortcuts {
+      if-layers = <1 2>;
+      then-layer = <5>;
     };
   };
 };
