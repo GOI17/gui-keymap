@@ -6,12 +6,12 @@
 
 #include <behaviors.dtsi>
 #include "led_count.h"
+#include "led_count.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "led_count.h"
 
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
@@ -149,7 +149,7 @@
     mac_shortcuts {
       label = "MAC SHORTCUTS";
       bindings = <
-&trans  &trans  &trans  &trans  &trans  &prev_app_mac_macro    &next_app_mac_macro  &trans  &trans  &trans  &trans  &trans
+&tog 5  &trans  &trans  &trans  &trans  &prev_app_mac_macro    &next_app_mac_macro  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                 &trans               &trans  &trans
