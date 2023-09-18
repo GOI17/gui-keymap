@@ -27,7 +27,10 @@
       compatible = "zmk,behavior-macro";
       label = "PWD_MACRO";
       #binding-cells = <0>;
-      bindings = <&kp LS(M) &kp Y &kp LS(N) &kp A &kp M &kp E &kp LS(I) &kp S &kp LS(G) &kp I &kp L &kp B &kp E &kp R &kp T &kp O &kp LS(A) &kp N &kp D &kp LS(M) &kp Y &kp LS(G) &kp I &kp R &kp L &kp F &kp R &kp I &kp E &kp N &kp D &kp LS(I) &kp S &kp LS(M) &kp E &kp L &kp I &kp S &kp S &kp A>;
+      bindings =
+        <&kp LS(M) &kp Y &kp LS(N) &kp A &kp M &kp E &kp LS(I) &kp S &kp LS(G) &kp I &kp L &kp B &kp E &kp R &kp T &kp O &kp LS(A) &kp N &kp D &kp LS(M) &kp Y &kp LS(G) &kp I &kp R &kp L &kp F &kp R &kp I &kp E &kp N>,
+        <&macro_wait_time 80>,
+        <&kp D &kp LS(I) &kp S &kp LS(M) &kp E &kp L &kp I &kp S &kp S &kp A>;
     };
     apex_macro: apex_macro {
       compatible = "zmk,behavior-macro";
