@@ -85,6 +85,12 @@
       #binding-cells = <0>;
       bindings = <&kp LS(W) &kp E &kp L &kp C &kp O &kp M &kp E &kp N1>;
     };
+    walmart_macro: walmart_macro {
+      compatible = "zmk,behavior-macro";
+      label = "WALMART_MACRO";
+      #binding-cells = <0>;
+      bindings = <&kp N6 &kp AMPS &kp LS(N) &kp LS(W) &kp E &kp CARET &kp LS(N) &kp N2 &kp B &kp POUND &kp LS(W) &kp N3 &kp LS(D) &kp DLLR &kp N3 &kp O &kp H>;
+    };
   };
 
   keymap {
