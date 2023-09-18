@@ -136,25 +136,23 @@
     };
 
     win_shortcuts {
+      label = "WIN SHORTCUTS";
       bindings = <
 &trans  &trans  &trans  &trans  &trans  &prev_app_macro    &next_app_macro  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
 &to 6   &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans             &trans           &trans  &trans
       >;
-
-      label = "WIN SHORTCUTS";
     };
 
     mac_shortcuts {
-      bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-      >;
-
       label = "MAC SHORTCUTS";
+      bindings = <
+&trans  &trans  &trans  &trans  &trans  &prev_app_mac_macro    &next_app_mac_macro  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans               &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                 &trans               &trans  &trans
+      >;
     };
   };
 
