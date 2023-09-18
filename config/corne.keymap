@@ -23,9 +23,14 @@
     compatible = "zmk,combos";
 
     next_app {
-      bindings = <&kp LCTRL>;
+      bindings = <&next_app_macro>;
       key-positions = <40 41>;
       layers = <0>;
+    };
+
+    prev_app {
+      bindings = <&prev_app_macro>;
+      key-positions = <39 41>;
     };
   };
 
