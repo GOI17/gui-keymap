@@ -57,6 +57,28 @@
       #binding-cells = <0>;
       bindings = <&kp N6 &kp AMPS &kp LS(N) &kp LS(W) &kp E &kp CARET &kp LS(N) &kp N2 &kp B &kp POUND &kp LS(W) &kp N3 &kp LS(D) &kp DLLR &kp N3 &kp O &kp H>;
     };
+    next_app_macro: next_app_macro {
+      compatible = "zmk,behavior-macro";
+      label = "NEXT_APP_MACRO";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press>,
+        <&kp LCTRL &kp RIGHT_ALT>,
+        <&macro_tap>,
+        <&kp TAB>,
+        <&macro_release>;
+    };
+    prev_app_macro: prev_app_macro {
+      compatible = "zmk,behavior-macro";
+      label = "PREV_APP_MACRO";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press>,
+        <&kp LCTRL &kp RALT &kp LSHFT>,
+        <&macro_tap>,
+        <&kp TAB>,
+        <&macro_release>;
+    };
   };
 
   keymap {
