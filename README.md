@@ -11,7 +11,7 @@ readable layout and keymap definitions for use with my [keymap-editor] tool.
 > demonstration purposes I've never actually tested it on a corne keyboard.
 > You're just better off using the one that is provided in the ZMK repo.
 
-![Screenshot](screenshot.png)
+![Screenshot](combined.webp)
 
 ## What's included
 
