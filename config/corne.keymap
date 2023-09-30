@@ -159,15 +159,5 @@
 
   conditional_layers {
     compatible = "zmk,conditional-layers";
-
-    quick_shortcuts {
-      if-layers = <1 2>;
-      then-layer = <5>;
-    };
-
-    return_win {
-      if-layers = <6 1>;
-      then-layer = <5>;
-    };
   };
 };
