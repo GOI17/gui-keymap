@@ -21,6 +21,17 @@
 
   combos {
     compatible = "zmk,combos";
+
+    next_app_win {
+      bindings = <&kp LA(LC(RIGHT))>;
+      key-positions = <5>;
+      layers = <5>;
+    };
+
+    next_app_mac {
+      bindings = <&kp LG(LA(RIGHT))>;
+      key-positions = <4>;
+    };
   };
 
   macros {
@@ -115,10 +126,10 @@
 
     shortcuts {
       bindings = <
-&trans  &trans  &trans  &trans  &kp C_AL_PREVIOUS_TASK  &kp C_AL_NEXT_TASK    &pwd_macro  &apex_macro  &apex_it_macro  &walmart_macro  &trans  &kp C_AL_TASK_MANAGER
-&trans  &trans  &trans  &trans  &trans                  &trans                &trans      &trans       &trans          &trans          &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans                &trans      &trans       &trans          &trans          &trans  &trans
-                        &trans  &trans                  &trans                &trans      &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &pwd_macro  &apex_macro  &apex_it_macro  &walmart_macro  &trans  &kp LC(LA(DELETE))
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans       &trans          &trans          &trans  &kp C_POWER
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans       &trans          &trans          &trans  &trans
+                        &trans  &trans  &trans    &trans      &trans       &trans
       >;
 
       label = "SHORTCUTS";
