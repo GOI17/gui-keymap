@@ -29,11 +29,13 @@
       label = "PWD_MACRO";
       #binding-cells = <0>;
       bindings =
-        <&kp LS(M) &kp Y &kp LS(N) &kp A &kp M &kp E &kp LS(I) &kp S &kp LS(G) &kp I &kp L &kp B>,
-        <&macro_wait_time 100>,
-        <&kp E &kp R &kp T &kp O &kp LS(A) &kp N &kp D &kp LS(M) &kp Y &kp LS(G) &kp I &kp R &kp L &kp F &kp R &kp I &kp E &kp N>,
-        <&macro_wait_time 100>,
-        <&kp D &kp LS(I) &kp S &kp LS(M) &kp E &kp L &kp I &kp S &kp S &kp A>;
+        <&kp LS(M) &kp Y &kp LS(N) &kp A &kp M &kp E &kp LS(I) &kp S &kp LS(G) &kp I &kp L &kp B &kp E &kp R &kp T &kp O &kp LS(A) &kp N &kp D &kp LS(M) &kp Y &kp LS(G) &kp I &kp R &kp L &pwd_macro_2>,
+    };
+    pwd_macro_2:pwd_macro_2 {
+      compatible = "zmk,behavior-macro";
+      label = "PWD_MACRO";
+      #binding-cells = <0>;
+      bindings = <&kp F &kp R &kp I &kp E &kp N &kp D &kp LS(I) &kp S &kp LS(M) &kp E &kp L &kp I &kp S &kp S &kp A>;
     };
     apex_macro: apex_macro {
       compatible = "zmk,behavior-macro";
@@ -51,7 +53,7 @@
       compatible = "zmk,behavior-macro";
       label = "WALMART_MACRO";
       #binding-cells = <0>;
-      bindings = <&kp N6 &kp AMPS &kp LS(N) &kp LS(W) &kp E &kp CARET &kp LS(N) &kp N2 &kp POUND &kp LS(W) &kp N3 &kp LS(D) &kp DLLR &kp N3 &kp O &kp H>;
+      bindings = <&kp N6 &kp AMPS &kp LS(N) &kp LS(W) &kp E &kp CARET &kp LS(N) &kp N2 &kp B &kp POUND &kp LS(W) &kp N3 &kp LS(D) &kp DLLR &kp N3 &kp O &kp H>;
     };
     next_app_win: next_app_win {
       compatible = "zmk,behavior-macro";
