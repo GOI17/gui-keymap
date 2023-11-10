@@ -73,10 +73,10 @@
 
     qwerty {
       bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y      &kp U  &kp I            &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G          &kp H      &kp J  &kp K            &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N      &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 5 SPACE    &lt 3 RET  &mo 2  &lt 4 RIGHT_ALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp RIGHT_ALT
       >;
 
       label = "QWERTY";
@@ -84,10 +84,10 @@
 
     number {
       bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp DELETE
+&trans        &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+                              &trans  &trans  &trans    &trans    &mo 3     &trans
       >;
 
       label = "NUMBER";
@@ -98,7 +98,7 @@
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DELETE
 &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                          &trans    &trans    &trans       &trans     &trans     &trans
+                          &trans    &mo 4     &trans       &trans     &trans     &trans
       >;
 
       label = "SYMBOL";
@@ -117,7 +117,7 @@
 
     config {
       bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4         &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI  &trans  &trans
+&mo 5   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4         &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI  &trans  &trans
 &trans  &trans        &trans        &trans           &bt BT_CLR    &out OUT_TOG         &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF  &trans  &trans
 &trans  &trans        &trans        &trans           &trans        &trans               &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(188,89,44)  &trans           &trans  &trans
                                     &rgb_ug RGB_TOG  &trans        &ext_power EP_TOG    &trans           &trans           &rgb_ug RGB_TOG
